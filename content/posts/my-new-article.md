@@ -5,8 +5,8 @@ draft: false
 tags: ["ai", "thoughts", "technology"]
 summary: "Two years ago, building a blog meant reading docs, watching tutorials, and asking friends. Today, it took two prompts."
 cover:
-  image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80"
-  alt: "AI and technology"
+  image: "/images/saddam-sunglasses.jpg"
+  alt: "Saddam Hussein with sunglasses"
   relative: false
 ---
 
