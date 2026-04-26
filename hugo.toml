@@ -1,0 +1,50 @@
+baseURL = "https://osaamakhalil.github.io/"
+languageCode = "en-us"
+title = "Some Thoughts"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  env = "production"
+  description = "A personal blog by Osama Khalil"
+  author = "Osama Khalil"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+
+  [params.homeInfoParams]
+    Title = "Some Thoughts"
+    Content = "Welcome to my blog. I write about things that interest me."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/osaamakhalil"
+
+[menu]
+  [[menu.main]]
+    identifier = "archive"
+    name = "Archive"
+    url = "/archive/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
