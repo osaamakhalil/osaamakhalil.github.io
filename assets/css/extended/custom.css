@@ -202,22 +202,10 @@ body {
 }
 
 /* Single post cover - full width hero */
-.post-single .entry-cover {
-  max-width: 1000px;
-  margin: 24px auto 40px !important;
-  border-radius: 4px !important;
-  overflow: hidden;
-  max-height: 560px;
-}
-
-/* Cover image caption */
-.entry-cover figcaption {
-  text-align: center;
-  font-size: 0.9rem;
-  opacity: 0.6;
-  padding: 10px 0 0;
-  font-style: italic;
-  direction: auto;
+.post-header {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 40px 24px 0;
 }
 
 .post-header .post-title {
