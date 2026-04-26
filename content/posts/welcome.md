@@ -7,7 +7,6 @@ summary: "A first post to kick things off. Why I started this blog, how it works
 cover:
   image: "/images/welcome-image.jpg"
   alt: "Welcome image"
-  caption: "Photo by [Andrew Neel](https://unsplash.com/@andrewtneel) on Unsplash"
   relative: false
 ---
 
