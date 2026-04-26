@@ -6,6 +6,7 @@ tags: ["ai", "thoughts", "technology"]
 summary: "Two years ago, building a blog meant reading docs, watching tutorials, and asking friends. Today, it took two prompts."
 cover:
   image: "/images/saddam-sunglasses.jpg"
+  caption: "مهيب الركن صدام حسين"
   alt: "Saddam Hussein with sunglasses"
   relative: false
 ---
