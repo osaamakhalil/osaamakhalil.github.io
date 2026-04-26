@@ -5,8 +5,8 @@ draft: false
 tags: ["hello", "first-post"]
 summary: "A first post to kick things off. Why I started this blog, how it works, and what you can expect from here."
 cover:
-  image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&q=80"
-  alt: "A laptop on a desk with coffee"
+  image: "/images/welcome-image.jpg"
+  alt: "Welcome image"
   caption: "Photo by [Andrew Neel](https://unsplash.com/@andrewtneel) on Unsplash"
   relative: false
 ---
