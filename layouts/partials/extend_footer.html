@@ -1,0 +1,53 @@
+<!-- Reading Progress Bar (Medium-style) -->
+<div id="progress-bar" style="
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #1a8917, #0f730c);
+  z-index: 9999;
+  transition: width 0.1s ease;
+"></div>
+
+<script>
+// Reading progress bar
+if (document.querySelector('.post-single')) {
+  window.addEventListener('scroll', function() {
+    const article = document.querySelector('.post-content');
+    if (!article) return;
+    const rect = article.getBoundingClientRect();
+    const scrolled = Math.min(Math.max((-rect.top) / (rect.height - window.innerHeight) * 100, 0), 100);
+    document.getElementById('progress-bar').style.width = scrolled + '%';
+  });
+} else {
+  // Hide on non-article pages
+  const bar = document.getElementById('progress-bar');
+  if (bar) bar.style.display = 'none';
+}
+
+// Smooth reveal for post entries on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.post-entry').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+  observer.observe(el);
+});
+
+// Estimated reading time enhancement
+document.querySelectorAll('.post-meta').forEach(meta => {
+  const text = meta.textContent;
+  if (text.includes('min')) {
+    meta.innerHTML = meta.innerHTML.replace(/(\d+ min)/, '☕ $1 read');
+  }
+});
+</script>

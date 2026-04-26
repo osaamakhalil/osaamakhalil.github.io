@@ -12,13 +12,20 @@ paginate = 10
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
-  ShowBreadCrumbs = true
+  ShowBreadCrumbs = false
   ShowCodeCopyButtons = true
   ShowToc = true
+  ShowFullTextinRSS = true
+
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+    responsiveImages = true
 
   [params.homeInfoParams]
     Title = "Some Thoughts"
-    Content = "Welcome to my blog. I write about things that interest me."
+    Content = """Stories, ideas, and reflections on technology, software, and life."""
 
   [[params.socialIcons]]
     name = "github"
@@ -46,5 +53,7 @@ paginate = 10
 
 [markup]
   [markup.highlight]
-    style = "monokai"
+    style = "dracula"
     lineNos = false
+  [markup.goldmark.renderer]
+    unsafe = true
