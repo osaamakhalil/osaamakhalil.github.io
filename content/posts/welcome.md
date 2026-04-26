@@ -32,10 +32,7 @@ No databases. No CMS. No servers to manage. Just words and a git push.
 ## What to Expect
 
 I'll be sharing my thoughts on:
-
-- **Technology** -- tools, trends, and things I find interesting
-- **Software Engineering** -- lessons learned, patterns, and practices
-- **Life** -- reflections on work, creativity, and everything in between
+I don't really know haha but random thougts about **Life** -- reflections on work, creativity, and everything in between.
 
 ## Let's Go
 
